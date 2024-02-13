@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project 1</title>
+    <meta name="description" content="This is project 1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var calendarEl = document.getElementById("calendar");
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: "dayGridMonth",
+        });
+        calendar.render();
+      });
+    </script>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+    }
+    a {
+    }
+    h1 {
+      font-size: 36px;
+    }
+    h2 {
+    }
+    h3 {
+    }
+    p {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+    .block {
+      display: block;
+    }
+    .flex {
+      display: flex;
+    }
+    .space-between {
+      justify-content: space-between;
+    }
+    .flex-wrap {
+      flex-wrap: wrap;
+    }
+    .container {
+      width: 85%;
+      max-width: 1180px;
+    }
+    .width-100 {
+      width: 100%;
+    }
+    .relative {
+      position: relative;
+    }
+    .absolute {
+      position: absolute;
+    }
+    .margin-auto {
+      margin: auto;
+    }
+    .align-center {
+      align-items: center;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .inline-block {
+      display: inline-block;
+    }
+    .justify-center {
+      justify-content: center;
+    }
+    .recent-project-image {
+      width: 30%;
+    }
+    .search-form {
+      max-width: 200px;
+    }
+    .search-form-container {
+      padding: 30px 10px;
+      background-color: white;
+    }
+
+    .banner {
+      background-image: url("https://placehold.co/1920x1080");
+      background-size: 100% 70%;
+      background-repeat: no-repeat;
+    }
+
+    section {
+      padding: 75px 0;
+    }
+
+    .background-blue {
+      background-color: #292e42;
+    }
+    .menu {
+      list-style: none;
+    }
+    .menu li {
+      padding: 0 25px;
+      color: white;
+    }
+    .background-orange {
+      background-color: #d98c42;
+      color: white;
+    }
+    .link {
+      padding: 7px 20px;
+      text-decoration: none;
+      color: white;
+      margin-right: 20px;
+    }
+    .color-white {
+      color: white;
+    }
+    header {
+      padding: 15px 0;
+    }
+    .search {
+      margin-right: 20px;
+      display: block;
+    }
+    .banner .contact {
+      margin-top: 50px;
+    }
+    .banner .phone {
+      margin-left: 20px;
+    }
+
+    .banner .link {
+      padding: 15px 20px;
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+    }
+  </style>
+  <body>
+    <header class="background-blue">
+      <div class="flex space-between container margin-auto align-center">
+        <div>
+          <img src="https://placehold.co/100x50" />
+        </div>
+        <div class="flex align-center">
+          <ul class="flex menu">
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>BLOG</li>
+          </ul>
+          <a href="/login" class="link background-orange">
+            <i class="bi bi-person-fill"></i>
+            Log in
+          </a>
+          <i class="bi bi-search color-white search"></i>
+          <i class="bi bi-list color-white"></i>
+        </div>
+      </div>
+    </header>
+    <section class="banner">
+      <div class="flex space-between container margin-auto">
+        <div>
+          <h1>We are...</h1>
+          <p class="">WITH OVER 25...</p>
+          <div class="contact flex space-between">
+            <div>
+              <a href="/practice" class="link background-orange block"
+                >PRACTICE AREA</a
+              >
+            </div>
+            <div class="phone">
+              <i></i>
+              <p>Call Use Now</p>
+              <p>+1-202-555-0171</p>
+            </div>
+          </div>
+        </div>
+        <div class="search-form-container">
+          <h2>Will Assist...</h2>
+          <p>sfdfsdfsfsdf......</p>
+          <form class="flex flex-wrap width-100 search-form">
+            <input class="width-100" type="text" />
+            <input class="width-100" type="text" />
+            <input class="width-100" type="text" />
+            <input class="width-100" type="text" />
+            <input
+              class="width-100 background-orange"
+              type="submit"
+              text="SEARCH"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="about flex space-between container margin-auto">
+      <div>
+        <img src="https://placehold.co/200x300" />
+      </div>
+      <div>
+        <span>About Lawter</span>
+        <h1>Istvan Cocron</h1>
+        <p>CLLB</p>
+        <p>The firm....</p>
+        <img src="" />
+      </div>
+      <div>
+        <div id="calendar"></div>
+        <div>
+          <button>Confirm</button>
+          <button>Reschedule</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="something background-blue">
+      <div class="flex space-between container margin-auto">
+        <div>
+          <i></i>
+          <p>170+</p>
+          <p>Expert...</p>
+        </div>
+        <div>
+          <i></i>
+          <p>170+</p>
+          <p>Expert...</p>
+        </div>
+        <div>
+          <i></i>
+          <p>170+</p>
+          <p>Expert...</p>
+        </div>
+        <div>
+          <i></i>
+          <p>170+</p>
+          <p>Expert...</p>
+        </div>
+      </div>
+    </section>
+    <div class="solution container margin-auto">
+      <span class="text-center block">sdf</span>
+      <h2 class="text-center">Law Solutions to solve your problem</h2>
+      <section class="menu flex text-center">
+        <div>
+          <i></i>
+          <h3>Business Law</h3>
+          <span>....</span>
+        </div>
+        <div>
+          <i></i>
+          <h3>Business Law</h3>
+          <span>....</span>
+        </div>
+        <div>
+          <i></i>
+          <h3>Business Law</h3>
+          <span>....</span>
+        </div>
+        <div>
+          <i></i>
+          <h3>Business Law</h3>
+          <span>....</span>
+        </div>
+        <div>
+          <i></i>
+          <h3>Business Law</h3>
+          <span>....</span>
+        </div>
+      </section>
+      <section class="law flex space-between">
+        <div>
+          <h3>Law</h3>
+          <p>....</p>
+          <a>....</a>
+        </div>
+        <div>
+          <img src="https://placehold.co/250x200" />
+        </div>
+      </section>
+      <section class="client flex space-between">
+        <div>
+          <span>....</span>
+          <h3>Law</h3>
+          <p>....</p>
+          <a>....</a>
+        </div>
+        <div>
+          <img src="https://placehold.co/100x150" />
+        </div>
+      </section>
+      <section class="projects">
+        <span>...</span>
+        <h2 class="text-center">Recent Projects to Make You Inspired</h2>
+        <div class="flex space-between flex-wrap">
+          <div class="recent-project-image">
+            <img src="https://placehold.co/150x200" />
+            <h3>Drug Online</h3>
+            <a href="drug-offense">></a>
+          </div>
+          <div class="recent-project-image">
+            <img src="https://placehold.co/150x200" />
+            <h3>Drug Online</h3>
+            <a href="drug-offense">></a>
+          </div>
+          <div class="recent-project-image">
+            <img src="https://placehold.co/150x200" />
+            <h3>Drug Online</h3>
+            <a href="drug-offense">></a>
+          </div>
+          <div class="recent-project-image">
+            <img src="https://placehold.co/150x200" />
+            <h3>Drug Online</h3>
+            <a href="drug-offense">></a>
+          </div>
+          <div class="recent-project-image">
+            <img src="https://placehold.co/150x200" />
+            <h3>Drug Online</h3>
+            <a href="drug-offense">></a>
+          </div>
+          <div class="recent-project-image">
+            <img src="https://placehold.co/150x200" />
+            <h3>Drug Online</h3>
+            <a href="drug-offense">></a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
